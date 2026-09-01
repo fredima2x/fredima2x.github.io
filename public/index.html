@@ -65,7 +65,7 @@
 <script>
     async function loadAndDisplayMOTD() {
         try {
-            const response = await fetch('/config/motd.json');
+            const response = await fetch('/assets/motd.json');
             const motds = await response.json();
             const randomMOTD = motds[Math.floor(Math.random() * motds.length)];
 
